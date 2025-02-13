@@ -185,8 +185,8 @@ class ACC(nn.Module):
         
         # Retrieve climatology
         self.normalization_file = {
-                'era5_single': '/mnt/sdc/qifan/zzn/S2S/climatology_1.5/climatology_single_level_1.5_new.zarr', 
-                'era5_pre': '/mnt/sdc/qifan/zzn/S2S/climatology_1.5/climatology_pressure_level_1.5_new.zarr'
+                'era5_single': '/mnt/sdc/S2S/climatology_1.5/climatology_single_level_1.5_new.zarr', 
+                'era5_pre': '/mnt/sdc/S2S/climatology_1.5/climatology_pressure_level_1.5_new.zarr'
                 # 'lra5': Path(config.DATA_DIR) / 'climatology' / 'climatology_lra5.zarr', 
                 # 'oras5': Path(config.DATA_DIR) / 'climatology' / 'climatology_oras5.zarr'
         }

@@ -17,7 +17,7 @@ data_args:
     test_years: [2018, 2019]
     val_years: [2016, 2017]
     kernel_size: 2
-    data_dir: '/mnt/sdc/qifan/zzn/S2S'
+    data_dir: '/mnt/sdc/S2S'
     n_step: 28
     lead_time: 15
     single_vars: ['2m_temperature','10m_u_component_of_wind','10m_v_component_of_wind'] ##input single_vars

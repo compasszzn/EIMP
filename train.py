@@ -40,8 +40,7 @@ def main(args):
         baseline = model.S2SBenchmarkModel(model_args=model_args, data_args=data_args) 
 
     baseline.setup()
-    # baseline = baseline.load_from_checkpoint('/home/yangliu/GraphS2S/GraphS2S/8vyh9uma/checkpoints/epoch=11-step=40416.ckpt')
-    
+
     # Initialize training
     log_dir = Path('logs') / model_args['model_name']
     wandb_logger = WandbLogger(project="GraphS2S", name='EGNN-Daily')
