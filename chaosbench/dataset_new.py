@@ -68,7 +68,7 @@ class S2SDataset(Dataset):
             # Path(config.DATA_DIR) / 'climatology' / 'climatology_oras5.zarr'
         ]
 
-        self.mask = torch.tensor(np.load('/home/yangliu/GraphS2S/land_mask.npy')).unsqueeze(-1)
+        self.mask = torch.tensor(np.load('/home/GraphS2S/land_mask.npy')).unsqueeze(-1)
         
         self.years = [str(year) for year in years]
         self.n_step = n_step

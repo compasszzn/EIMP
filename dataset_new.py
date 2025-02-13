@@ -280,9 +280,9 @@ class S2SEvalDataset(Dataset):
             pressure_ds = xr.open_dataset(self.file_paths_pred[0][idx], engine='zarr')[[config.PRESSURE_MAPPING[i] for i in self.pred_pressure_vars]]
             single_ds = xr.open_dataset(self.file_paths_pred[1][idx], engine='zarr')[[config.SINGLE_MAPPING[i] for i in self.pred_single_vars]]
             for var in pressure_ds.data_vars:
-                if var == 'z':  # 假设 'Z' 是地势位高度 (m²/s²)
-                    g = 9.80665  # 重力加速度 (m/s²)
-                    pressure_ds[var] = pressure_ds[var] * g  # 转换为 gpm
+                if var == 'z': 
+                    g = 9.80665  
+                    pressure_ds[var] = pressure_ds[var] * g  
             for step_idx in range(15,43):
                 pressure_level_data_pred.append(pressure_ds.sel(step=np.timedelta64(step_idx, 'D')).to_array().values)
                 single_level_merge_data_pred.append(single_ds.sel(step=np.timedelta64(step_idx, 'D')).to_array().values)
