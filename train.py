@@ -68,7 +68,5 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--config_filepath',default='chaosbench/configs/segformer_s2s.yaml', help='Provide the filepath string to the model config...')
     parser.add_argument('--data_type',default='graph', help='Provide the filepath string to the model config...')
-    # parser.add_argument('--config_filepath',default='/home/zinanzheng/project/SST/S2S/chaosbench/configs/gnn.yaml', help='Provide the filepath string to the model config...')
-    # parser.add_argument('--data_type',default='graph', help='Provide the filepath string to the model config...')
     args = parser.parse_args()
     main(args)
