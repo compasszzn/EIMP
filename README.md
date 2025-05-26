@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/930178705.svg)](https://doi.org/10.5281/zenodo.15516467)
 # create environment
 ```
 conda create -n eimp python==3.9
